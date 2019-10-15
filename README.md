@@ -1,5 +1,36 @@
 ## 如何让api支持跨域请求
 
+> example
+
+``index.html:``
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>测试</title>
+</head>
+<body>
+  <script>
+    fetch('http://localhost:3001/test', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8'
+      },
+      body: JSON.stringify({
+        data: 'Test'
+      })
+    }).then(data => {
+      console.log(data);
+    })
+  </script>
+</body>
+</html>
+```
+
 > 跨域
 
 ``概念:`` [相关文章](https://juejin.im/post/5c23993de51d457b8c1f4ee1)
