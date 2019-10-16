@@ -2,6 +2,8 @@
 
 > example
 
+[图片](./test_cors.gif)
+
 ``index.html:``
 
 ```html
