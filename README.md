@@ -2,7 +2,9 @@
 
 > example
 
-[图片](./test_cors.gif)
+<p align="center">
+  <img src="./test_cors.gif" alt="draggable"/>
+</p>
 
 ``index.html:``
 
